@@ -1,0 +1,17 @@
+comments:  
+  allowedFields: ['address', 'name', 'title', 'description', 'rating']
+  branch: "main"
+  commitMessage: "Add Staticman data"
+  filename: "entry{@timestamp}"
+  format: "yaml"
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "timestamp-seconds"  
+  moderation: true
+  name: "localhost.com"
+  path: "_data/comments"
+  requiredFields: ['name', 'title', 'description', 'rating']
+  transforms:
+    email: md5
